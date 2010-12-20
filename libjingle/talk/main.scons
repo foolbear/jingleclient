@@ -59,7 +59,8 @@ root_env = Environment(
     'FEATURE_ENABLE_VOICEMAIL',
     'FEATURE_ENABLE_PSTN',
     'HAVE_SRTP',
-  ]
+  ],
+  TARGET_ARCH = 'x86',
 )
 
 # This is where we set common environments
@@ -98,7 +99,7 @@ win_env.Append(
   COMPONENT_LIBRARY_PUBLISH = True,  # Put dlls in output dir too
   CCFLAGS = [
     '/Fd${TARGET}.pdb', # pdb per object allows --jobs=
-    '/WX',          # warnings are errors
+#    '/WX',          # warnings are errors
     '/Zc:forScope', # handle 'for (int i = 0 ...)' right
     '/EHs-c-',      # disable C++ EH
     '/GR-',         # disable RTTI
