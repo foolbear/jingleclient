@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base\asyncfile.cc" />
+    <ClCompile Include="base\asynchttprequest.cc" />
+    <ClCompile Include="base\asyncpacketsocket.cc" />
+    <ClCompile Include="base\asyncsocket.cc" />
+    <ClCompile Include="base\asynctcpsocket.cc" />
+    <ClCompile Include="base\asyncudpsocket.cc" />
+    <ClCompile Include="base\autodetectproxy.cc" />
+    <ClCompile Include="base\base64.cc" />
+    <ClCompile Include="base\bytebuffer.cc" />
+    <ClCompile Include="base\checks.cc" />
+    <ClCompile Include="base\common.cc" />
+    <ClCompile Include="base\diskcache.cc" />
+    <ClCompile Include="base\event.cc" />
+    <ClCompile Include="base\fileutils.cc" />
+    <ClCompile Include="base\firewallsocketserver.cc" />
+    <ClCompile Include="base\flags.cc" />
+    <ClCompile Include="base\helpers.cc" />
+    <ClCompile Include="base\host.cc" />
+    <ClCompile Include="base\httpbase.cc" />
+    <ClCompile Include="base\httpclient.cc" />
+    <ClCompile Include="base\httpcommon.cc" />
+    <ClCompile Include="base\httprequest.cc" />
+    <ClCompile Include="base\linux.cc" />
+    <ClCompile Include="base\logging.cc" />
+    <ClCompile Include="base\macconversion.cc" />
+    <ClCompile Include="base\macutils.cc" />
+    <ClCompile Include="base\messagehandler.cc" />
+    <ClCompile Include="base\messagequeue.cc" />
+    <ClCompile Include="base\nethelpers.cc" />
+    <ClCompile Include="base\network.cc" />
+    <ClCompile Include="base\openssladapter.cc" />
+    <ClCompile Include="base\opensslidentity.cc" />
+    <ClCompile Include="base\opensslstreamadapter.cc" />
+    <ClCompile Include="base\pathutils.cc" />
+    <ClCompile Include="base\physicalsocketserver.cc" />
+    <ClCompile Include="base\proxydetect.cc" />
+    <ClCompile Include="base\proxyinfo.cc" />
+    <ClCompile Include="base\schanneladapter.cc" />
+    <ClCompile Include="base\signalthread.cc" />
+    <ClCompile Include="base\socketadapters.cc" />
+    <ClCompile Include="base\socketaddress.cc" />
+    <ClCompile Include="base\socketaddresspair.cc" />
+    <ClCompile Include="base\socketpool.cc" />
+    <ClCompile Include="base\socketstream.cc" />
+    <ClCompile Include="base\ssladapter.cc" />
+    <ClCompile Include="base\sslidentity.cc" />
+    <ClCompile Include="base\sslsocketfactory.cc" />
+    <ClCompile Include="base\sslstreamadapter.cc" />
+    <ClCompile Include="base\stream.cc" />
+    <ClCompile Include="base\stringdigest.cc" />
+    <ClCompile Include="base\stringencode.cc" />
+    <ClCompile Include="base\stringutils.cc" />
+    <ClCompile Include="base\task.cc" />
+    <ClCompile Include="base\taskparent.cc" />
+    <ClCompile Include="base\taskrunner.cc" />
+    <ClCompile Include="base\thread.cc" />
+    <ClCompile Include="base\time.cc" />
+    <ClCompile Include="base\unixfilesystem.cc" />
+    <ClCompile Include="base\urlencode.cc" />
+    <ClCompile Include="base\win32.cc" />
+    <ClCompile Include="base\win32filesystem.cc" />
+    <ClCompile Include="base\win32securityerrors.cc" />
+    <ClCompile Include="base\win32socketinit.cc" />
+    <ClCompile Include="base\win32socketserver.cc" />
+    <ClCompile Include="base\win32window.cc" />
+    <ClCompile Include="base\winfirewall.cc" />
+    <ClCompile Include="base\winping.cc" />
+    <ClCompile Include="examples\call\callclient.cc" />
+    <ClCompile Include="examples\call\call_main.cc" />
+    <ClCompile Include="examples\call\console.cc" />
+    <ClCompile Include="examples\call\discoitemsquerytask.cc" />
+    <ClCompile Include="examples\call\friendinvitesendtask.cc" />
+    <ClCompile Include="examples\call\mucinviterecvtask.cc" />
+    <ClCompile Include="examples\call\mucinvitesendtask.cc" />
+    <ClCompile Include="examples\call\presenceouttask.cc" />
+    <ClCompile Include="examples\call\presencepushtask.cc" />
+    <ClCompile Include="examples\call\voicemailjidrequester.cc" />
+    <ClCompile Include="examples\login\login_main.cc" />
+    <ClCompile Include="examples\login\xmppauth.cc" />
+    <ClCompile Include="examples\login\xmpppump.cc" />
+    <ClCompile Include="examples\login\xmppsocket.cc" />
+    <ClCompile Include="examples\login\xmppthread.cc" />
+    <ClCompile Include="p2p\base\constants.cc" />
+    <ClCompile Include="p2p\base\p2ptransport.cc" />
+    <ClCompile Include="p2p\base\p2ptransportchannel.cc" />
+    <ClCompile Include="p2p\base\parsing.cc" />
+    <ClCompile Include="p2p\base\port.cc" />
+    <ClCompile Include="p2p\base\pseudotcp.cc" />
+    <ClCompile Include="p2p\base\rawtransport.cc" />
+    <ClCompile Include="p2p\base\rawtransportchannel.cc" />
+    <ClCompile Include="p2p\base\relayport.cc" />
+    <ClCompile Include="p2p\base\relayserver.cc" />
+    <ClCompile Include="p2p\base\relayserver_main.cc" />
+    <ClCompile Include="p2p\base\session.cc" />
+    <ClCompile Include="p2p\base\sessiondescription.cc" />
+    <ClCompile Include="p2p\base\sessionmanager.cc" />
+    <ClCompile Include="p2p\base\sessionmessages.cc" />
+    <ClCompile Include="p2p\base\stun.cc" />
+    <ClCompile Include="p2p\base\stunport.cc" />
+    <ClCompile Include="p2p\base\stunrequest.cc" />
+    <ClCompile Include="p2p\base\stunserver.cc" />
+    <ClCompile Include="p2p\base\stunserver_main.cc" />
+    <ClCompile Include="p2p\base\tcpport.cc" />
+    <ClCompile Include="p2p\base\transport.cc" />
+    <ClCompile Include="p2p\base\transportchannel.cc" />
+    <ClCompile Include="p2p\base\transportchannelproxy.cc" />
+    <ClCompile Include="p2p\base\udpport.cc" />
+    <ClCompile Include="p2p\client\basicportallocator.cc" />
+    <ClCompile Include="p2p\client\httpportallocator.cc" />
+    <ClCompile Include="p2p\client\socketmonitor.cc" />
+    <ClCompile Include="session\phone\audiomonitor.cc" />
+    <ClCompile Include="session\phone\call.cc" />
+    <ClCompile Include="session\phone\channel.cc" />
+    <ClCompile Include="session\phone\channelmanager.cc" />
+    <ClCompile Include="session\phone\codec.cc" />
+    <ClCompile Include="session\phone\devicemanager.cc" />
+    <ClCompile Include="session\phone\filemediaengine.cc" />
+    <ClCompile Include="session\phone\mediaengine.cc" />
+    <ClCompile Include="session\phone\mediamonitor.cc" />
+    <ClCompile Include="session\phone\mediasessionclient.cc" />
+    <ClCompile Include="session\phone\rtpdump.cc" />
+    <ClCompile Include="session\phone\soundclip.cc" />
+    <ClCompile Include="session\phone\srtpfilter.cc" />
+    <ClCompile Include="session\tunnel\pseudotcpchannel.cc" />
+    <ClCompile Include="session\tunnel\securetunnelsessionclient.cc" />
+    <ClCompile Include="session\tunnel\tunnelsessionclient.cc" />
+    <ClCompile Include="xmllite\qname.cc" />
+    <ClCompile Include="xmllite\xmlbuilder.cc" />
+    <ClCompile Include="xmllite\xmlconstants.cc" />
+    <ClCompile Include="xmllite\xmlelement.cc" />
+    <ClCompile Include="xmllite\xmlnsstack.cc" />
+    <ClCompile Include="xmllite\xmlparser.cc" />
+    <ClCompile Include="xmllite\xmlprinter.cc" />
+    <ClCompile Include="xmpp\constants.cc" />
+    <ClCompile Include="xmpp\jid.cc" />
+    <ClCompile Include="xmpp\ratelimitmanager.cc" />
+    <ClCompile Include="xmpp\saslmechanism.cc" />
+    <ClCompile Include="xmpp\xmppclient.cc" />
+    <ClCompile Include="xmpp\xmppengineimpl.cc" />
+    <ClCompile Include="xmpp\xmppengineimpl_iq.cc" />
+    <ClCompile Include="xmpp\xmpplogintask.cc" />
+    <ClCompile Include="xmpp\xmppstanzaparser.cc" />
+    <ClCompile Include="xmpp\xmpptask.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libjingle.scons" />
+    <None Include="main.scons" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CBAB32A6-B6CA-4342-9BC1-DC1C1B52CF74}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeOutput>LibJingle.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>cd $(SolutionDir)\libjingle\talk
+$(SolutionDir)\packages\swtoolkit\hammer.bat
+</NMakeBuildCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeOutput>LibJingle.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

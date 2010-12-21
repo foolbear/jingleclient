@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{4b738b75-e572-44aa-979b-1ee6c509639e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libxmpphelp">
+      <UniqueIdentifier>{44a2e01d-eab0-4961-baa0-cc3de35a51ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\base">
+      <UniqueIdentifier>{7cc58cc7-ea27-4f46-8659-014b12a74016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\p2p">
+      <UniqueIdentifier>{fee1be12-2b47-470f-9dd4-5f9fc76081cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\p2p\base">
+      <UniqueIdentifier>{48089d48-e115-4666-90ea-1cb7d2f09fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\p2p\client">
+      <UniqueIdentifier>{45714277-1959-425d-80ad-b2235fb12145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\session">
+      <UniqueIdentifier>{f11e1d39-4dea-4526-9918-0ee73cb7eaa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\session\tunnel">
+      <UniqueIdentifier>{898f4757-79a9-4f57-9f74-ddd80c89a537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\session\phone">
+      <UniqueIdentifier>{77be3a62-0bfb-4ce7-a3a9-90b1879643e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmllite">
+      <UniqueIdentifier>{9150705d-c8f6-4f4e-aee7-f3300e916a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{9a0eb05a-fad1-4a48-a2e8-49ea5d6e51e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scons">
+      <UniqueIdentifier>{edc6708b-480c-4c19-bfe1-0d46d5493953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples">
+      <UniqueIdentifier>{99a7e31f-bdf8-4144-8b08-c8f7ca7b4292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\relayserver">
+      <UniqueIdentifier>{e656c33c-eeec-44a0-ad9c-d272d28b1546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\stunserver">
+      <UniqueIdentifier>{ab15094d-a2ab-420d-b48c-a415a2479e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\login">
+      <UniqueIdentifier>{a051ddce-0998-4ac0-addb-30192afaaba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\call">
+      <UniqueIdentifier>{01b53723-1ff4-4e97-a09b-9af2fdff26cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd">
+      <UniqueIdentifier>{45594f45-4ce0-4de3-8fba-5d412c1fd247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\expat">
+      <UniqueIdentifier>{7af1adf4-665a-4d65-b743-2a6bf6429df8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\libsrtp">
+      <UniqueIdentifier>{98f5cb39-733e-4c8b-b9be-56c42f460c4a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base\asyncfile.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\asynchttprequest.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\asyncpacketsocket.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\asyncsocket.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\asynctcpsocket.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\asyncudpsocket.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\autodetectproxy.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\base64.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\bytebuffer.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\checks.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\common.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\diskcache.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\event.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\fileutils.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\firewallsocketserver.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\flags.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\helpers.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\host.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\httpbase.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\httpclient.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\httpcommon.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\httprequest.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\linux.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\logging.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\macconversion.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\macutils.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\messagehandler.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\messagequeue.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\nethelpers.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\network.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\openssladapter.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\opensslidentity.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\opensslstreamadapter.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\pathutils.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\physicalsocketserver.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\proxydetect.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\proxyinfo.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\schanneladapter.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\signalthread.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\socketadapters.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\socketaddress.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\socketaddresspair.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\socketpool.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\socketstream.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ssladapter.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\sslidentity.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\sslsocketfactory.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\sslstreamadapter.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\stream.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\stringdigest.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\stringencode.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\stringutils.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\task.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\taskparent.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\taskrunner.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\thread.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\time.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\unixfilesystem.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\urlencode.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\constants.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\p2ptransport.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\p2ptransportchannel.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\parsing.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\port.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\pseudotcp.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\rawtransport.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\rawtransportchannel.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\relayport.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\relayserver.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\relayserver_main.cc">
+      <Filter>examples\relayserver</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\session.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\sessiondescription.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\sessionmanager.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\sessionmessages.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\stun.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\stunport.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\stunrequest.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\stunserver.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\stunserver_main.cc">
+      <Filter>examples\stunserver</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\tcpport.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\transport.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\transportchannel.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\transportchannelproxy.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\base\udpport.cc">
+      <Filter>libjingle\p2p\base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\client\basicportallocator.cc">
+      <Filter>libjingle\p2p\client</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\client\httpportallocator.cc">
+      <Filter>libjingle\p2p\client</Filter>
+    </ClCompile>
+    <ClCompile Include="p2p\client\socketmonitor.cc">
+      <Filter>libjingle\p2p\client</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\audiomonitor.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\call.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\channel.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\channelmanager.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\codec.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\devicemanager.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\filemediaengine.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\mediaengine.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\mediamonitor.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\mediasessionclient.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\rtpdump.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\soundclip.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\srtpfilter.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\tunnel\pseudotcpchannel.cc">
+      <Filter>libjingle\session\tunnel</Filter>
+    </ClCompile>
+    <ClCompile Include="session\tunnel\securetunnelsessionclient.cc">
+      <Filter>libjingle\session\tunnel</Filter>
+    </ClCompile>
+    <ClCompile Include="session\tunnel\tunnelsessionclient.cc">
+      <Filter>libjingle\session\tunnel</Filter>
+    </ClCompile>
+    <ClCompile Include="xmllite\qname.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="xmllite\xmlbuilder.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="xmllite\xmlconstants.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="xmllite\xmlelement.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="xmllite\xmlnsstack.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="xmllite\xmlparser.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="xmllite\xmlprinter.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\constants.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\jid.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\ratelimitmanager.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\saslmechanism.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\xmppclient.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\xmppengineimpl.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\xmppengineimpl_iq.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\xmpplogintask.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\xmppstanzaparser.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\xmpptask.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="base\win32.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\win32filesystem.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\win32securityerrors.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\win32socketinit.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\win32socketserver.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\win32window.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\winfirewall.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\winping.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\login\login_main.cc">
+      <Filter>examples\login</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\login\xmppthread.cc">
+      <Filter>examples\login</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\login\xmppauth.cc">
+      <Filter>libxmpphelp</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\login\xmpppump.cc">
+      <Filter>libxmpphelp</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\login\xmppsocket.cc">
+      <Filter>libxmpphelp</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\call\call_main.cc">
+      <Filter>examples\call</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\call\callclient.cc">
+      <Filter>examples\call</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\call\console.cc">
+      <Filter>examples\call</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\call\discoitemsquerytask.cc">
+      <Filter>examples\call</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\call\friendinvitesendtask.cc">
+      <Filter>examples\call</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\call\mucinviterecvtask.cc">
+      <Filter>examples\call</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\call\mucinvitesendtask.cc">
+      <Filter>examples\call</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\call\presenceouttask.cc">
+      <Filter>examples\call</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\call\presencepushtask.cc">
+      <Filter>examples\call</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\call\voicemailjidrequester.cc">
+      <Filter>examples\call</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libjingle.scons">
+      <Filter>scons</Filter>
+    </None>
+    <None Include="main.scons">
+      <Filter>scons</Filter>
+    </None>
+  </ItemGroup>
+</Project>
