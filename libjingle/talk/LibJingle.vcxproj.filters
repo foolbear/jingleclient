@@ -61,6 +61,36 @@
     <Filter Include="3rd\libsrtp">
       <UniqueIdentifier>{98f5cb39-733e-4c8b-b9be-56c42f460c4a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="libjingle\base\header">
+      <UniqueIdentifier>{5e26cad9-baf3-4890-87a8-70499a8f2b80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\p2p\base\header">
+      <UniqueIdentifier>{763ab094-ba61-4778-b189-4f631699c686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\p2p\client\header">
+      <UniqueIdentifier>{257bdd51-4361-4eb4-82ee-084bde7c5e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\session\phone\header">
+      <UniqueIdentifier>{19a401f6-92cc-4650-aa82-22644b99897b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\session\tunnel\header">
+      <UniqueIdentifier>{be80917a-f7c1-4786-9da6-ea776de18604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmllite\header">
+      <UniqueIdentifier>{628243ba-32b3-4ea2-8083-da0b907deffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp\header">
+      <UniqueIdentifier>{f0b82743-0a9a-4edc-8a75-6a5f2d72fcc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libxmpphelp\header">
+      <UniqueIdentifier>{b5975538-6344-4a4c-9330-5c6f9cad2ab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\call\header">
+      <UniqueIdentifier>{c232415e-6090-49d0-a35f-d1822aceafcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\login\header">
+      <UniqueIdentifier>{a6161d5d-748f-4600-8d89-3c2b74a76446}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="base\asyncfile.cc">
@@ -133,12 +163,6 @@
       <Filter>libjingle\base</Filter>
     </ClCompile>
     <ClCompile Include="base\logging.cc">
-      <Filter>libjingle\base</Filter>
-    </ClCompile>
-    <ClCompile Include="base\macconversion.cc">
-      <Filter>libjingle\base</Filter>
-    </ClCompile>
-    <ClCompile Include="base\macutils.cc">
       <Filter>libjingle\base</Filter>
     </ClCompile>
     <ClCompile Include="base\messagehandler.cc">
@@ -232,9 +256,6 @@
       <Filter>libjingle\base</Filter>
     </ClCompile>
     <ClCompile Include="base\time.cc">
-      <Filter>libjingle\base</Filter>
-    </ClCompile>
-    <ClCompile Include="base\unixfilesystem.cc">
       <Filter>libjingle\base</Filter>
     </ClCompile>
     <ClCompile Include="base\urlencode.cc">
@@ -500,5 +521,535 @@
     <None Include="main.scons">
       <Filter>scons</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\asyncfile.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\asynchttprequest.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\asyncpacketsocket.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\asyncsocket.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\asynctcpsocket.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\asyncudpsocket.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\autodetectproxy.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\base64.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\basicdefs.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\basictypes.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\bytebuffer.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\byteorder.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\checks.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\common.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\constructormagic.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\criticalsection.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\cryptstring.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\diskcache.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Equifax_Secure_Global_eBusiness_CA-1.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\event.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\fileutils.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\firewallsocketserver.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\flags.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\helpers.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\host.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\httpbase.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\httpclient.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\httpcommon.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\httpcommon-inl.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\httprequest.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\linked_ptr.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\linux.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\logging.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\macutils.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\md5.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\messagehandler.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\messagequeue.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\nethelpers.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\network.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\openssladapter.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\opensslidentity.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\opensslstreamadapter.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pathutils.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\physicalsocketserver.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\proxydetect.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\proxyinfo.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\schanneladapter.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\scoped_ptr.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sec_buffer.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\signalthread.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sigslot.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sigslotrepeater.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\socket.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\socketadapters.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\socketaddress.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\socketaddresspair.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\socketfactory.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\socketpool.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\socketserver.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\socketstream.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\ssladapter.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sslidentity.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sslsocketfactory.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sslstreamadapter.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\stream.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\stringdigest.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\stringencode.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\stringutils.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\task.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\taskparent.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\taskrunner.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\thread.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\time.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\urlencode.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\win32.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\win32filesystem.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\win32socketinit.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\win32socketserver.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\win32window.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\winfirewall.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\winping.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\udpport.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\transportchannelproxy.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\transportchannelimpl.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\transportchannel.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\transport.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\tcpport.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\stunserver.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\stunrequest.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\stunport.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\stun.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\sessionmessages.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\sessionmanager.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\sessionid.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\sessiondescription.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\sessionclient.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\session.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\relayserver.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\relayport.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\rawtransportchannel.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\rawtransport.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\pseudotcp.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\portallocator.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\port.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\parsing.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\p2ptransportchannel.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\p2ptransport.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\constants.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\common.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\base\candidate.h">
+      <Filter>libjingle\p2p\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\client\basicportallocator.h">
+      <Filter>libjingle\p2p\client\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\client\httpportallocator.h">
+      <Filter>libjingle\p2p\client\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\client\sessionmanagertask.h">
+      <Filter>libjingle\p2p\client\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\client\sessionsendtask.h">
+      <Filter>libjingle\p2p\client\header</Filter>
+    </ClInclude>
+    <ClInclude Include="p2p\client\socketmonitor.h">
+      <Filter>libjingle\p2p\client\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\audiomonitor.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\call.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\channel.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\channelmanager.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\codec.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\cryptoparams.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\devicemanager.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\filemediaengine.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\mediachannel.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\mediaengine.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\mediamonitor.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\mediasessionclient.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\mediasink.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\rtpdump.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\soundclip.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\srtpfilter.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\v4llookup.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\videocommon.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\voicechannel.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\tunnel\pseudotcpchannel.h">
+      <Filter>libjingle\session\tunnel\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\tunnel\securetunnelsessionclient.h">
+      <Filter>libjingle\session\tunnel\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\tunnel\tunnelsessionclient.h">
+      <Filter>libjingle\session\tunnel\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmllite\qname.h">
+      <Filter>libjingle\xmllite\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmllite\xmlbuilder.h">
+      <Filter>libjingle\xmllite\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmllite\xmlconstants.h">
+      <Filter>libjingle\xmllite\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmllite\xmlelement.h">
+      <Filter>libjingle\xmllite\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmllite\xmlnsstack.h">
+      <Filter>libjingle\xmllite\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmllite\xmlparser.h">
+      <Filter>libjingle\xmllite\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmllite\xmlprinter.h">
+      <Filter>libjingle\xmllite\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\asyncsocket.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\constants.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\jid.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\plainsaslhandler.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\prexmppauth.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\ratelimitmanager.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\saslcookiemechanism.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\saslhandler.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\saslmechanism.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\saslplainmechanism.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\xmppclient.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\xmppclientsettings.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\xmppengine.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\xmppengineimpl.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\xmpplogintask.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\xmppstanzaparser.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\xmpptask.h">
+      <Filter>libjingle\xmpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\login\xmppauth.h">
+      <Filter>libxmpphelp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\login\xmpppump.h">
+      <Filter>libxmpphelp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\login\xmppsocket.h">
+      <Filter>libxmpphelp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\callclient.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\console.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\discoitemsquerytask.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\friendinvitesendtask.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\muc.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\mucinviterecvtask.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\mucinvitesendtask.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\presenceouttask.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\presencepushtask.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\status.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\call\voicemailjidrequester.h">
+      <Filter>examples\call\header</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\login\xmppthread.h">
+      <Filter>examples\login\header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
