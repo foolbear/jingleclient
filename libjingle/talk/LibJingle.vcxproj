@@ -33,6 +33,7 @@
     <ClCompile Include="base\httpclient.cc" />
     <ClCompile Include="base\httpcommon.cc" />
     <ClCompile Include="base\httprequest.cc" />
+    <ClCompile Include="base\latebindingsymboltable.cc" />
     <ClCompile Include="base\linux.cc" />
     <ClCompile Include="base\logging.cc" />
     <ClCompile Include="base\messagehandler.cc" />
@@ -46,6 +47,7 @@
     <ClCompile Include="base\physicalsocketserver.cc" />
     <ClCompile Include="base\proxydetect.cc" />
     <ClCompile Include="base\proxyinfo.cc" />
+    <ClCompile Include="base\ratetracker.cc" />
     <ClCompile Include="base\schanneladapter.cc" />
     <ClCompile Include="base\signalthread.cc" />
     <ClCompile Include="base\socketadapters.cc" />
@@ -125,9 +127,11 @@
     <ClCompile Include="session\phone\codec.cc" />
     <ClCompile Include="session\phone\devicemanager.cc" />
     <ClCompile Include="session\phone\filemediaengine.cc" />
+    <ClCompile Include="session\phone\libudevsymboltable.cc" />
     <ClCompile Include="session\phone\mediaengine.cc" />
     <ClCompile Include="session\phone\mediamonitor.cc" />
     <ClCompile Include="session\phone\mediasessionclient.cc" />
+    <ClCompile Include="session\phone\rtcpmuxfilter.cc" />
     <ClCompile Include="session\phone\rtpdump.cc" />
     <ClCompile Include="session\phone\soundclip.cc" />
     <ClCompile Include="session\phone\srtpfilter.cc" />
@@ -167,6 +171,7 @@
     <ClInclude Include="base\base64.h" />
     <ClInclude Include="base\basicdefs.h" />
     <ClInclude Include="base\basictypes.h" />
+    <ClInclude Include="base\buffer.h" />
     <ClInclude Include="base\bytebuffer.h" />
     <ClInclude Include="base\byteorder.h" />
     <ClInclude Include="base\checks.h" />
@@ -187,6 +192,7 @@
     <ClInclude Include="base\httpcommon-inl.h" />
     <ClInclude Include="base\httpcommon.h" />
     <ClInclude Include="base\httprequest.h" />
+    <ClInclude Include="base\latebindingsymboltable.h" />
     <ClInclude Include="base\linked_ptr.h" />
     <ClInclude Include="base\linux.h" />
     <ClInclude Include="base\logging.h" />
@@ -203,6 +209,7 @@
     <ClInclude Include="base\physicalsocketserver.h" />
     <ClInclude Include="base\proxydetect.h" />
     <ClInclude Include="base\proxyinfo.h" />
+    <ClInclude Include="base\ratetracker.h" />
     <ClInclude Include="base\schanneladapter.h" />
     <ClInclude Include="base\scoped_ptr.h" />
     <ClInclude Include="base\sec_buffer.h" />
@@ -295,11 +302,13 @@
     <ClInclude Include="session\phone\cryptoparams.h" />
     <ClInclude Include="session\phone\devicemanager.h" />
     <ClInclude Include="session\phone\filemediaengine.h" />
+    <ClInclude Include="session\phone\libudevsymboltable.h" />
     <ClInclude Include="session\phone\mediachannel.h" />
     <ClInclude Include="session\phone\mediaengine.h" />
     <ClInclude Include="session\phone\mediamonitor.h" />
     <ClInclude Include="session\phone\mediasessionclient.h" />
     <ClInclude Include="session\phone\mediasink.h" />
+    <ClInclude Include="session\phone\rtcpmuxfilter.h" />
     <ClInclude Include="session\phone\rtpdump.h" />
     <ClInclude Include="session\phone\soundclip.h" />
     <ClInclude Include="session\phone\srtpfilter.h" />

@@ -59,8 +59,7 @@ root_env = Environment(
     'FEATURE_ENABLE_VOICEMAIL',
     'FEATURE_ENABLE_PSTN',
     'HAVE_SRTP',
-  ],
-  TARGET_ARCH = 'x86',
+  ]
 )
 
 # This is where we set common environments
@@ -93,13 +92,15 @@ win_env = root_env.Clone(
   CCPDBFLAGS = '',
   CCFLAGS_DEBUG = '',
   CCFLAGS_OPTIMIZED = '',
+  # We force a x86 target even when building on x64 Windows platforms.
+  TARGET_ARCH = 'x86',
 )
 
 win_env.Append(
   COMPONENT_LIBRARY_PUBLISH = True,  # Put dlls in output dir too
   CCFLAGS = [
     '/Fd${TARGET}.pdb', # pdb per object allows --jobs=
-#    '/WX',          # warnings are errors
+    #'/WX',          # warnings are errors
     '/Zc:forScope', # handle 'for (int i = 0 ...)' right
     '/EHs-c-',      # disable C++ EH
     '/GR-',         # disable RTTI
@@ -211,6 +212,9 @@ win_opt_env.Prepend(
       '/MT',     # link with LIBCMT.LIB (multi-threaded, static linked crt)
       '/GS',     # enable security checks
   ],
+  LINKFLAGS = [
+    '/safeseh',
+  ],
 )
 
 envs.append(win_opt_env)
@@ -231,7 +235,6 @@ posix_env.Append(
     '_REENTRANT',
   ],
   CCFLAGS = [
-    '-m32',
     '-Wall',
     '-Werror',
     '-Wno-switch',
@@ -241,9 +244,6 @@ posix_env.Append(
     '-Wno-non-virtual-dtor',
     '-Wno-ctor-dtor-privacy',
     '-fno-rtti',
-  ],
-  LINKFLAGS = [
-    '-m32',
   ],
 )
 
@@ -263,6 +263,7 @@ mac_env.Append(
     'MAC_OS_X_VERSION_MIN_REQUIRED=1040',
   ],
   CCFLAGS = [
+    '-m32',
     '-arch', 'i386',
     '-isysroot', '/Developer/SDKs/MacOSX10.5.sdk',
     '-fasm-blocks',
@@ -275,6 +276,7 @@ mac_env.Append(
     # TODO: consider only defining for libs that actually have objc.
     '-ObjC',
     '-arch', 'i386',
+    '-m32',
   ],
   FRAMEWORKS = [
     'CoreServices',
@@ -282,6 +284,10 @@ mac_env.Append(
     'Security',
     'SystemConfiguration',
     'OpenGL',
+    'CoreAudio',
+    'QuickTime',
+    'Cocoa',
+    'QTKit',
   ]
 )
 
@@ -374,6 +380,14 @@ linux_env = linux_common_env.Clone()
 # product would end up being broken on any computer with a different version
 # installed. So instead we build it ourself and statically link to it.
 linux_env.SetBits('use_static_openssl')
+linux_env.Append(
+  CCFLAGS = [
+    '-m32',
+  ],
+  LINKFLAGS = [
+    '-m32',
+  ],
+)
 
 linux_dbg_env = linux_env.Clone(
   BUILD_TYPE = 'dbg',

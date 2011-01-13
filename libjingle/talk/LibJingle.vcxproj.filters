@@ -91,6 +91,9 @@
     <Filter Include="examples\login\header">
       <UniqueIdentifier>{a6161d5d-748f-4600-8d89-3c2b74a76446}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd\libudev">
+      <UniqueIdentifier>{96932ac5-8bd7-4c73-9f9b-3f78b7d5814f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="base\asyncfile.cc">
@@ -512,6 +515,18 @@
     </ClCompile>
     <ClCompile Include="examples\call\voicemailjidrequester.cc">
       <Filter>examples\call</Filter>
+    </ClCompile>
+    <ClCompile Include="base\latebindingsymboltable.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ratetracker.cc">
+      <Filter>libjingle\base</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\libudevsymboltable.cc">
+      <Filter>libjingle\session\phone</Filter>
+    </ClCompile>
+    <ClCompile Include="session\phone\rtcpmuxfilter.cc">
+      <Filter>libjingle\session\phone</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1050,6 +1065,21 @@
     </ClInclude>
     <ClInclude Include="examples\login\xmppthread.h">
       <Filter>examples\login\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\buffer.h">
+      <Filter>libjingle\base\header</Filter>
+    </ClInclude>
+    <ClInclude Include="base\latebindingsymboltable.h">
+      <Filter>libjingle\base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\ratetracker.h">
+      <Filter>libjingle\base</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\libudevsymboltable.h">
+      <Filter>libjingle\session\phone\header</Filter>
+    </ClInclude>
+    <ClInclude Include="session\phone\rtcpmuxfilter.h">
+      <Filter>libjingle\session\phone\header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
