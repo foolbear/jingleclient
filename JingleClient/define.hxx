@@ -30,7 +30,7 @@ public:
         show_(buzz::Status::SHOW_NONE),
         avatar_hash_(""),
         group_(NULL),
-        ui_item_(NULL)
+        user_data_(NULL)
     {}
 //     Buddy(const Buddy & r) 
 //     {
@@ -66,7 +66,7 @@ public:
     const std::string & status() const { return status_; }
     const std::string & avatar_hash() const { return avatar_hash_; }
     const Group * group() const { return group_; }
-    const void * ui_item() const { return ui_item_; }
+    const void * user_data() const { return user_data_; }
     bool is_resource_exist(const buzz::Jid & resource)
     {
         It4Resources it = std::find(resources_.begin(), resources_.end(), resource);
@@ -95,7 +95,7 @@ public:
     void set_show(const buzz::Status::Show show) { show_ = show; }
     void set_status(const std::string & status) { status_ = status; }
     void set_group(Group * group) { group_ = group; }
-    void set_ui_item(void * ui_item) { ui_item_ = ui_item; }
+    void set_user_data(void * data) { user_data_ = data; }
 private:
     buzz::Jid bare_jid_;
     Resources resources_;
@@ -106,20 +106,22 @@ private:
     std::string status_;//Ç©Ãû
     std::string avatar_hash_;//Í·Ïñ¹þÏ£Öµ
     Group * group_;
-    void * ui_item_;
+    void * user_data_;
 }
 
 class Group
 {
 public:
     Group() : name_(""),
-        ui_item_(NULL),
+        user_data_(NULL),
         type_(GROUP_TYPE_CUSTOMIZED)
     {}
     ~Group() {}
     enum GroupType { GROUP_TYPE_DEFAULT=0, GROUP_TYPE_CUSTOMIZED, GROUP_TYPE_BLACKLIST, GROUP_TYPE_STRANGER, GROUP_TYPE_RECOMMENDED, GROUP_TYPE_ONLINE, GROUP_TYPE_OFFLINE };
 public:
     const std::string & name() const { return name_; }
+    const void * user_data() const { return user_data_; }
+    const GroupType type() const { return type_; }
     Buddy* get_buddy(const buzz::Jid & jid)
     {
         It4BuddiesByJid it = buddies_.find(jid);
@@ -129,6 +131,8 @@ public:
     }
 public:
     void set_name(const std::string & name) { name_ = name; }
+    void set_user_data(void * data) { user_data_ = data; }
+    void set_type(GroupType type) { type_ = type; }
     void clear_buddies() 
     { 
         if (!buddies_.empty())
@@ -152,7 +156,7 @@ public:
     }
 private:
     std::string name_;
-    void * ui_item_;
+    void * user_data_;
     GroupType type_;
     BuddiesByJid buddies_;
 };
