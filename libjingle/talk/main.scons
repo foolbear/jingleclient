@@ -466,11 +466,12 @@ if win_env.Bit('vsproj'):
     COMPONENT_VS_PROJECT_DIR = '$MAIN_DIR',
   )
   vs_env.AlwaysBuild(p)
-
+  
   # Solution and target projects
   s = vs_env.ComponentVSSolution(
+    'libjingle',
     ['all_libraries', 'all_programs', 'all_test_programs'],
-    projects = [p],
+    project = [p],
   )
 
   print '***Unfortunately the vsproj creator isn\'t smart enough to '
