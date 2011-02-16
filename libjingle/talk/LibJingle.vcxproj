@@ -369,8 +369,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <NMakeOutput>LibJingle.exe</NMakeOutput>
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <NMakeBuildCommandLine>cd $(SolutionDir)\libjingle\talk
-$(SolutionDir)\packages\swtoolkit\hammer.bat
+    <NMakeBuildCommandLine>cd $(ProjectDir)
+$(ProjectDir)\..\..\packages\swtoolkit\hammer.bat
 </NMakeBuildCommandLine>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
